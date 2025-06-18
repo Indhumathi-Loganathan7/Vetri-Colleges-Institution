@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vetri College Header with Modals</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="d-flex justify-content-between header-container">
+      <!-- Left: Logo and Name -->
+      <div class="d-flex align-items-center gap-3">
+        <img src="assets/Salford Class.png" alt="Vetri College Logo" class="college-logo">
+        <span class="college-name">VETRI COLLEGE & INSTITUTIONS</span>
+      </div>
+
+      <!-- Right Buttons Section -->
+      <div class="col-md-6 d-flex flex-column flex-md-row justify-content-md-end button-wrapper">
+        <button class="btn btn-yellow fs-4" data-bs-toggle="modal" data-bs-target="#supportModal">
+          <img src="assets/customer-support-icon-help-assistance-vector-14678150-removebg-preview.png" width="20">
+          Support
+        </button>
+        <button class="btn btn-yellow fs-4" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <img src="assets/my-account-login-removebg-preview.png" width="20">
+          Nivea
+        </button>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Image-Based Navigation Bar -->
+  <div class="container-fluid nav-icon-bar">
+    <div class="row justify-content-center text-center">
+      <div class="col-6 col-md-2 mb-0">
+        <a href="index.html">
+          <img src="assets/institution-icon-16-removebg-preview.png" alt="About Icon">
+          About Us
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-2">
+        <a href="admission.html">
+          <img src="assets/images-removebg-preview.png" alt="Admission Icon">
+          Admission
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-2">
+        <a href="courses.html" class="active">
+          <img src="assets/opened-book-icon-white-style-600nw-1867337026-removebg-preview.png" alt="Courses Icon">
+          Courses
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-2">
+        <a href="examresult.html">
+          <img src="assets/pngtree-exam-icon-isolated-on-abstract-background-png-image_1742759-removebg-preview.png"
+            alt="Exam Result Icon">
+          Exam Result
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-2">
+        <a href="weoffer.html">
+          <img src="assets/service.png" alt="We Offer Icon">
+          We Offer
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-2">
+        <a href="contactus.html">
+          <img src="assets/images-removebg-preview.png" alt="Contact Icon">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <img src="assets/courses.jpg" class="img-fluid">
+  </div>
+
+  <div class="container my-5 shadow-lg rounded">
+    <div class="section-heading">PROGRAMMES OFFERED</div>
+
+    <div class="container program-wrapper">
+      <div class="row g-4">
+
+        <!-- Program Item -->
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img src="assets/ux-ui-design-icon-outline-vector-33243310-removebg-preview.png" alt="UI UX">
+            <div class="program-title">UI UX Designing</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img src="assets/images-removebg-preview (1).png" alt="Python">
+            <div class="program-title">Python Fullstack</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img
+              src="assets/8921081.png"
+              alt="Data Analytics">
+            <div class="program-title">Data Analytics</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img src="assets/JAVA-Full-Stack-Developer-removebg-preview.png" alt="Java">
+            <div class="program-title">Java Fullstack</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img src="assets/4488910-removebg-preview.png" alt="MERN">
+            <div class="program-title">MERN Stack</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img src="assets/modern-design-icon-of-data-science-vector-removebg-preview.png" alt="Data Science">
+            <div class="program-title">Data Science</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img src="assets/1195392-removebg-preview.png" alt="Business Analytics">
+            <div class="program-title">Business Analytics</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img src="assets/10435234-removebg-preview.png" alt="Software Testing">
+            <div class="program-title">Software Testing</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img src="assets/1260218-removebg-preview.png" alt="Digital Marketing">
+            <div class="program-title">Digital Marketing</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img src="assets/29026e-aws-dark-removebg-preview.png" alt="AWS">
+            <div class="program-title">AWS (Amazon Web Services)</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4">
+          <div class="program-card">
+            <img src="assets/8820135-removebg-preview.png" alt="Mobile App">
+            <div class="program-title">Mobile App Development</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Image Section -->
+  <div class="sports-bg"></div>
+
+  <!-- Floating Sports Container -->
+  <div class="container sports-container">
+    <!-- Title -->
+    <div class="sports-title fs-3 fw-bold">SPORTS</div>
+
+    <!-- Content -->
+    <div class="sports-content">
+      <h4 class="fw-bold fs-4">Admission Procedure</h4>
+      <ul class="fs-4">
+        <li>
+      Every student of the 1 year degree class shall be required to undergo the course of physical training prescribed by the college and his annual attendance and progress certificates shall not be considered complete unless the principal has certified on the report of the director of physical education that the student has satisfactorily undergone the prescribed course in physical training and put in three-fourths of the attendance in addition to the usual course of instruction.
+    </li>
+    <li>
+      No student will be exempted from the course of physical training except such students as may have been declared by the medical officer of the college to be unfit to undergo a course of physical training and approved by the university. However, students who are in N.C.C. and N.S.S. will be exempted.
+    </li>
+    <li>
+      1st year U.G and P.G students have to undergo medical inspection without fail. Students who fail to do so are not eligible to write the examinations.
+    </li>
+      </ul>
+
+      <!-- Game Cards -->
+      <div class="row g-4 sports-cards mt-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="card h-100 d-flex flex-row align-items-center justify-content-start p-2">
+            <img src="assets/set-6-sports-icons-as-learn-play-outdoor-games-tennis_313674-4440.png" alt="Outdoor Games" class="image-fluid card-img">
+            <div class="card-body">
+              <h5 class="card-title">OurDoor Games</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card h-100 d-flex flex-row align-items-center justify-content-start p-2">
+            <img src="assets/36000467-illustration-of-game-game-icons-video-game-icon-play-icon-game-console.jpg" alt="Indoor Games" class="image-fluid card-img">
+            <div class="card-body">
+              <h5 class="card-title">Indoor Games</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card h-100 d-flex flex-row align-items-center justify-content-start p-2">
+            <img src="assets/360_F_831041373_xnJNC6ehMS6lObUeVv764Fi2snIpgR9W.jpg  " alt="Yoga" class="image-fluid card-img">
+            <div class="card-body">
+              <h5 class="card-title">Yoga</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card h-100 d-flex flex-row align-items-center justify-content-start p-2">
+            <img src="assets/3339074.png" alt="Arts and Crafts" class="image-fluid card-img">
+            <div class="card-body">
+              <h5 class="card-title">Arts & Crafts</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Support Modal -->
+  <div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 position-relative support-modal">
+
+        <!-- Close "X" Button -->
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+
+        <!-- Modal Body -->
+        <div class="text-center mb-3">
+          <img src="assets/Salford_Class-removebg-preview.png" alt="Logo" style="width: 80px;">
+          <h4 class="mt-2 fw-bold fs-2">Get in Touch</h4>
+        </div>
+
+        <!-- Form (will redirect to index.html) -->
+        <form action="index.html" method="get">
+
+          <!-- Name -->
+          <div class="mb-3 position-relative">
+            <i class="fa-solid fa-user icon-inside-input"></i>
+            <input type="text" class="form-control ps-5" placeholder="Name" required>
+          </div>
+
+          <!-- Mobile -->
+          <div class="mb-3 position-relative">
+            <i class="fa-solid fa-phone icon-inside-input"></i>
+            <input type="tel" class="form-control ps-5" placeholder="Mobile" required>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3 position-relative">
+            <i class="fa-solid fa-envelope icon-inside-input"></i>
+            <input type="email" class="form-control ps-5" placeholder="Email" required>
+          </div>
+
+
+          <!-- Message -->
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-yellow px-4">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 border-0 position-relative login-modal">
+
+        <!-- Close Button -->
+        <button type="button" class="btn-lclose position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+          aria-label="Close" style="color:grey"></button>
+
+        <!-- Logo and Heading -->
+        <div class="text-center mb-4">
+          <img src="assets/Salford Class.png" alt="Logo" style="height:180px; width:180px;">
+          <h4 class="mt-2 fw-bold fs-2" style="font-family: 'Josefin Sans', sans-serif;">LOGIN</h4>
+        </div>
+
+        <!-- Login Form -->
+        <form action="index.html" method="get">
+          <div class="mb-3 py-2">
+            <input type="text" class="form-control input-field " placeholder="Username" required>
+          </div>
+          <div class="mb-3 py-2">
+            <input type="password" class="form-control input-field" placeholder="Password" required>
+          </div>
+          <div class="text-center mb-3 py-2">
+            <button type="submit" class="btn btn-yellow fs-5 px-4 py-2">Login</button>
+          </div>
+        </form>
+
+        <!-- Links -->
+        <div class="text-start small">
+          <p class="mb-1 fw-bold fs-5">Forgot Password?</p>
+          <p class="fw-bold fs-5">New User? <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal"
+              data-bs-target="#registerModal" data-bs-dismiss="modal">
+              Create Account?
+            </a></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 border-0 position-relative login-modal">
+
+        <!-- Close Button (White) -->
+        <button type="button" class="btn-lclose position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+          aria-label="Close" style="color:gray;"></button>
+
+        <!-- Heading -->
+        <div class="text-center mb-4">
+          <h4 class="mt-2 fw-bold fs-2">REGISTER</h4>
+        </div>
+
+        <!-- Form -->
+        <form action="index.html" method="get">
+          <div class="mb-3">
+            <input type="text" class="form-control input-field" placeholder="  Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control input-field" placeholder="  Mobile" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control input-field" placeholder="  Email" required>
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control input-field" placeholder="  Password" required>
+          </div>
+
+          <!-- Register Button -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-yellow px-4 py-2">Register</button>
+          </div>
+        </form>
+
+        <!-- Switch to Login -->
+        <div class="text-center mt-4">
+          <p class="fw-bold mb-2">Do you Have an Account?</p>
+          <a href="#" class="btn btn-yellow" data-bs-toggle="modal" data-bs-target="#loginModal"
+            data-bs-dismiss="modal">Login</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<footer class="footer text-white pt-5 pb-4">
+  <div class="container text-md-start text-center">
+    <div class="row">
+
+      <!-- Logo & Name -->
+      <div class="col-md-3 mb-4 px-4">
+        <img src="assets/Salford_Class-removebg-preview.png" alt="Vetri College Logo" class="mb-3 fimg">
+        <h5 class="name fw-bold text-uppercase fs-3">VETRI COLLEGE & INSTITUTIONS</h5>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold text-uppercase">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Examinations</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Our Services</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Courses -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold text-uppercase">Courses</h5>
+        <ul class="list-unstyled">
+          <li>Python Fullstack</li>
+          <li>UI UX Designing</li>
+          <li>Data Analytics</li>
+          <li>Java Fullstack</li>
+          <li>Mern Stack</li>
+          <li>Data Science</li>
+          <li>Business Analytics</li>
+          <li>Software Testing</li>
+          <li>Digital Marketing</li>
+          <li>AWS & Mobile App</li>
+          <li>Development</li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold text-uppercase">Address</h5>
+        <p><i class="fas fa-map-marker-alt me-2"></i>21, XYZ Street, ABC Nagar, Chennai-6000xx</p>
+        <p><i class="fas fa-phone-alt me-2"></i>+91 9123456789</p>
+        <p><i class="fas fa-envelope me-2"></i>Info@vetricollegeandinstitutions.com</p>
+
+        <h5 class="fw-bold mt-4">Follow us on:</h5>
+        <div class="d-flex gap-2 align-items-center mt-2">
+          <a href="#"><img src="assets/whatsapp.png" alt="WhatsApp"></a>
+          <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="assets/youtube.png" alt="YouTube"></a>
+          <a href="#"><img src="assets/twitter.png" alt="Twitter"></a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="text-center pt-3 mt-4">
+      <p class="mb-0">© 2025 Vetri College & Institutions. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</html>

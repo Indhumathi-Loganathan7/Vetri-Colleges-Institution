@@ -1,0 +1,580 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* header part styling */
+.college-logo {
+    width: 100px;
+}
+
+.college-name {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.btn-yellow {
+    background-color: #FFCB05;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 8px 18px;
+}
+
+.btn-yellow img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-yellow:hover {
+    background-color: #00274D;
+    color: white;
+}
+
+.header-container {
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.button-wrapper {
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .btn-yellow {
+        width: auto;
+    }
+}
+
+/* support modal styling */
+.support-modal {
+    background-color: #00274D;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.input-field {
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid transparent;
+}
+
+.input-field:focus {
+    border-color: #ffcb05;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-yellow {
+    background-color: #FFCB05;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.btn-yellow:hover {
+    background-color: #e0a800;
+}
+
+#supportModal img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.icon-inside-input {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+}
+
+.form-control input {
+    padding-left: 35px !important;
+    /* Make room for icon */
+    font-family: 'Josefin Sans', sans-serif;
+}
+.btn-close {
+  filter: brightness(0) invert(1); /* Makes the default SVG white */
+  opacity: 1;
+}
+
+
+
+
+/* Navbar styling  */
+.nav-icon-bar {
+    background-color: #02274F;
+    /* Dark blue */
+    padding-top: 10px;
+}
+
+.nav-icon-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: larger;
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.nav-icon-bar a:hover {
+    color: #ffc107;
+}
+
+.nav-icon-bar img {
+    width: 40px;
+    height: 40px;
+    padding-right: 3px;
+    object-fit: contain;
+    /* margin-bottom: 3px; */
+}
+.nav-icon-bar a.active {
+    color:#FFCB05
+}
+
+/* Login modal styling */
+.login-modal {
+  background: white;
+  border-radius: 20px;
+  border:5px solid #00274D !important;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Yellow button */
+.btn-yellow {
+  background-color: #FFCB05;
+  color: #000;
+  border: none;
+  font-weight: bold;
+}
+
+/* Make the close button white */
+.btn-close {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+
+.input-field {
+    border-color: #00274D;
+}
+.input-field::placeholder {
+  color: #999;
+}
+
+/* carousal styling */
+.carousel-item img {
+  height: 500px; /* Adjust as needed */
+  object-fit:fill;
+}
+
+/* Team members styling */
+.team-img {
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .team-card {
+      background-color: #00274D; /* Navy blue */
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .team-name {
+      color: #FFCB05; /* Yellow */
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    .team-role {
+      color: #FFCB05 !important;
+      font-weight: 600;
+      font-size: 22px;
+    }
+
+    @media (max-width: 767px) {
+      .team-img {
+        height: 150px;
+        width: 150px;
+      }
+    }
+
+.stats-section {
+    background-color: #FFCB05;
+    padding: 30px 10px;
+  }
+
+  .stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .stat-item {
+    flex: 1 1 120px;
+    max-width: 140px;
+    text-align: center;
+  }
+
+  .stats-icon {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .stats-label {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .stats-number {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  @media (min-width: 992px) {
+    .stat-item {
+      max-width: none;
+      flex: 0 0 12%;
+    }
+  }
+
+  img.img-fluid {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+img.img-fluid:hover {
+  transform: scale(1.03);
+}
+
+
+
+
+
+
+/* Footer styling */
+
+.footer {
+  background-color: #00274D;
+}
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+.footer .fimg {
+    max-width: 200px;
+    border-radius: 50%;
+}
+.footer .name {
+    color:#FFCB05;
+}
+.footer a img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.footer a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 0 !important;  
+  object-fit: contain;
+}
+
+/* admissions page styling */
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+.section-box {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  max-width: 92%; 
+  overflow: hidden;
+}
+
+
+    .section-header {
+      background-color: #ffcb05;
+      color: #000;
+      font-weight: 700;
+      padding: 15px;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .section-body {
+      padding: 25px;
+    }
+
+    .section-body ul {
+      padding-left: 20px;
+    }
+
+    .section-body ul li {
+      margin-bottom: 10px;
+    }
+
+    .step-title {
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 576px) {
+      .section-body {
+        padding: 15px;
+      }
+    }
+
+    /* Courses page Styling */
+
+    .section-heading {
+      background-color: #02274F;
+      color: #FFCB05;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    .program-card {
+      border: 2px solid #FFCB05;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      background-color: #fff;
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: 100%;
+    }
+
+    .program-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .program-card img {
+      height: 100px;
+      margin-bottom: 15px;
+    }
+
+    .program-title {
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+
+    .program-wrapper {
+      padding: 30px 10px;
+    }
+
+    .sports-bg {
+      background: url('../assets/Big-School-Playgrounds-6-reasons-why-kids-need-them.png') center center/cover no-repeat;
+      height: 400px;
+      position: relative;
+    }
+
+    .sports-container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      margin-top: -100px;
+      z-index: 10;
+      position: relative;
+    }
+
+    .sports-title {
+      background-color: #ffcb05;
+      font-weight: 700;
+      font-size: 1.8rem;
+      text-align: center;
+      padding: 15px;
+      /* border-top-left-radius: 10px; */
+      /* border-top-right-radius: 10px; */
+    }
+
+    .sports-content {
+      padding: 30px;
+    }
+
+    .sports-cards .card {
+      background-color: #00274D;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .sports-cards .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .sports-cards .card-body {
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 576px) {
+      .sports-title {
+        font-size: 1.5rem;
+      }
+    }
+
+    .card .card-img {
+      width:85px;
+      height:65px;
+      border-radius: 0 !important;
+      
+    }
+
+    .bg-dark-blue {
+  background-color: #00274D; /* Dark Navy Blue */
+}
+
+.btn-warning {
+  background-color:#ffcb05 ;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-warning:hover {
+  background-color: #dba900;
+}
+.small-input {
+  width: 100%;
+  max-width: 600px; /* Prevents it from getting too wide */
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #00274D;
+}
+
+.form-label {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+.section-header {
+      background-color: #ffcb05;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 15px;
+      font-size: 1.5rem;
+    }
+    .section {
+      margin: 20px;
+      background-color: white;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    .section-content {
+      padding: 20px 30px;
+      font-size: 0.95rem;
+    }
+    .section-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+
+    /* Contact us page Styling */
+    .contact-heading {
+      background-color: #ffcb05;
+      text-align: center;
+      font-weight: bold;
+      padding: 20px 0;
+      font-size: 24px;
+    }
+
+    .info-box {
+      border: 1px solid #ffcb05;
+      border-radius: 15px;
+      padding: 30px 20px 20px;
+      background-color: white;
+      position: relative;
+      min-height: 230px;
+    }
+
+    .info-box img {
+      width: 70px;
+      height: 70px;
+      background-color: #03274e;
+      border-radius: 50%;
+      padding: 10px;
+      margin-top: -65px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .info-title {
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .contact-form {
+      background-color: #03274e;
+      color: #ffffff;
+      padding: 30px 20px;
+      border-radius: 20px;
+      max-width: 700px;
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      border-radius: 10px;
+      margin-bottom: 25px;
+      border: 1px solid #03274e;
+      padding: 10px 15px;
+      background-color: white;
+      color: black;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+      resize: none;
+    }
+
+    .contact-form .btn {
+      background-color: #ffcb05;
+      font-weight: bold;
+      color: black;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .contact-form img.logo {
+      width: 120px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 767px) {
+      .info-box {
+        margin-top: 50px;
+      }
+
+      .info-box img {
+        width: 60px;
+        height: 60px;
+        margin-top: -50px;
+      }
+    }

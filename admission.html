@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vetri College Header with Modals</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="d-flex justify-content-between header-container">
+      <!-- Left: Logo and Name -->
+      <div class="d-flex align-items-center gap-3">
+        <img src="assets/Salford Class.png" alt="Vetri College Logo" class="college-logo">
+        <span class="college-name">VETRI COLLEGE & INSTITUTIONS</span>
+      </div>
+
+      <!-- Right Buttons Section -->
+      <div class="col-md-6 d-flex flex-column flex-md-row justify-content-md-end button-wrapper">
+        <button class="btn btn-yellow fs-4" data-bs-toggle="modal" data-bs-target="#supportModal">
+          <img src="assets/customer-support-icon-help-assistance-vector-14678150-removebg-preview.png" width="20">
+          Support
+        </button>
+        <button class="btn btn-yellow fs-4" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <img src="assets/my-account-login-removebg-preview.png" width="20">
+          Nivea
+        </button>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Image-Based Navigation Bar -->
+  <div class="container-fluid nav-icon-bar">
+    <div class="row justify-content-center text-center">
+      <div class="col-6 col-md-2 mb-0">
+        <a href="index.html">
+          <img src="assets/institution-icon-16-removebg-preview.png" alt="About Icon">
+          About Us
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-2">
+        <a href="admission.html" class="active">
+          <img src="assets/images-removebg-preview.png" alt="Admission Icon">
+          Admission
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-2">
+        <a href="courses.html">
+          <img src="assets/opened-book-icon-white-style-600nw-1867337026-removebg-preview.png" alt="Courses Icon">
+          Courses
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-2">
+        <a href="examresult.html">
+          <img src="assets/pngtree-exam-icon-isolated-on-abstract-background-png-image_1742759-removebg-preview.png"
+            alt="Exam Result Icon">
+          Exam Result
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-2">
+        <a href="weoffer.html">
+          <img src="assets/service.png" alt="We Offer Icon">
+          We Offer
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-2">
+        <a href="contactus.html">
+          <img src="assets/images-removebg-preview.png" alt="Contact Icon">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="imageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="assets/group-positive-cheerful-students-doing-homework-together-classroom-using-laptop-63106042.png"
+          class="d-block w-100" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/c6.jpg" class="d-block w-100" alt="Image 2">
+      </div>
+      <div class="carousel-item active">
+        <img src="assets/DeWatermark.ai_1748089558702.png" class="d-block w-100" alt="Image 3">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/01-Picsart-AiImageEnhancer.jpg" class="d-block w-100" alt="Image 3">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/1675236426777.jpeg" class="d-block w-100" alt="Image 3">
+      </div>
+    </div>
+  </div>
+
+  <section class="text-center my-5">
+  <!-- ADMISSION SECTION -->
+  <div class="container border shadow-sm">
+    <div class="bg-warning py-2">
+      <h3 class="fw-bold m-0 section-header">ADMISSION</h3>
+    </div>
+    <div class="py-4">
+      <img src="assets/240_F_750244097_zOCDf39KjnbV5ujklsVyK8YoVKtg4ac0.jpg" alt="Graduation" class="img-fluid" style="max-width:300px;">
+      <br>
+      <button type="button" class="btn btn-warning fw-bold fs-4" data-bs-toggle="modal" data-bs-target="#contactModal">
+  Register
+</button>
+    </div>
+  </div>
+
+  <!-- GENERAL INFORMATION SECTION -->
+  <div class="container mt-5 border shadow-sm">
+    <div class="py-2">
+      <h3 class="fw-bold m-0 section-header">GENERAL INFORMATION</h3>
+    </div>
+    <div class="text-start p-4 bg-light fs-5">
+      <p><strong>Dear Applicant,</strong></p>
+      <p>
+        Welcome to the admission portal of Vetri College & Institutions, a premier institute in Higher Education. 
+        To make the admission process comfortable, please read through the instructions:
+      </p>
+      <ul class="no-bullets fs-5">
+        <li>Applications with incorrect information/wrong application fee will be rejected. Application fee details are available in the payment link.</li>
+        <li>Admission to any course does not guarantee Hostel accommodation. For Hostel Admission, a separate application should be submitted to the Deputy Warden after college admission.</li>
+        <li>The College does not accept donations for admission. If anyone promises admission on payment of donation in cash or kind, report it to the Principal immediately.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Rules and Regulations -->
+  <div class="section-box">
+    <div class="section-header">RULES AND REGULATIONS</div>
+    <div class="section-body">
+      <h5 class="fs-4"><strong>Admission Procedure</strong></h5>
+      <ul class="fs-5">
+        <li>
+        Students are required to enclose a copy of the address proof (eg: Ration Card/ Voter ID/ Driving Licence/ Passport /Aadhaar Card). Candidates who have passed CBSE or Higher Secondary Examination (XII Standard) conducted by Boards other than the Tamil Nadu Higher Secondary Board of Education shall be required to produce an <strong>ELIGIBILITY CERTIFICATE</strong> from the University of Madras.
+      </li>
+      <li>
+        The college <strong>DOES NOT COLLECT DONATIONS</strong> in any form for admission. The college has not appointed any outside agency or individuals to select students for admission. If anyone approaches you promising admission on payment of money, please bring it to the notice of the Principal.
+      </li>
+      <li>
+        Applicants provisionally selected for admission will be intimated by Post. They must present themselves for an interview with the Principal along with their parents/Guardian on the date and the time mentioned in the card. At the time of interview, the student should produce:
+          <li>Original Transfer Certificate</li>
+          <li>Conduct Certificate from the Head of the Institution last studied</li>
+          <li>
+            Mark Statements of Higher Secondary Course or any other qualifying examination in the case of applicants for Undergraduate courses, along with three photo copies of the mark statement
+          </li>
+          <li>
+            Eligibility Certificate issued by the Madras University in the case of applicants whose qualifying Examination has to be recognized by the University
+          </li>
+          <li>
+            Degree Mark Statements and Provisional Certificates in the case of applicants for the Postgraduate courses
+          </li>
+          <li>
+            One Passport size colour photograph and one Stamp size colour photograph
+          </li>
+          <li>
+            Demand Draft for the fees to be paid on admission.
+          </li>
+      </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Online Application -->
+  <div class="section-box">
+    <div class="section-header">ONLINE APPLICATION</div>
+    <div class="section-body fs-5">
+      <h5><strong>How to Apply</strong></h5>
+      <p>Download the Prospectus and read instructions carefully before filling up the Application Form.</p>
+      <p class="step-title">Step 1:</p>
+      <p>Read instructions to apply and click 'Register' button.</p>
+
+      <p class="step-title">Step 2:</p>
+      <p>Fill in your details carefully. OTP will be sent to your mobile and email. Check your spam folder if not received.</p>
+
+      <p class="step-title">Step 3:</p>
+      <p>Login to your account and fill all the details.</p>
+
+      <p class="step-title">Step 4:</p>
+      <p>After submitting, you'll be taken to your dashboard.</p>
+
+      <p class="step-title">Step 5:</p>
+      <p>Disable popup-blocker and click on payment button to complete the transaction.</p>
+
+      <p>Once payment is done, you'll receive a confirmation email. Any changes will be notified via email and SMS.</p>
+    </div>
+  </div>
+
+
+  <!-- Support Modal -->
+  <div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 position-relative support-modal">
+
+        <!-- Close "X" Button -->
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+
+        <!-- Modal Body -->
+        <div class="text-center mb-3">
+          <img src="assets/Salford_Class-removebg-preview.png" alt="Logo" style="width: 80px;">
+          <h4 class="mt-2 fw-bold fs-2">Get in Touch</h4>
+        </div>
+
+        <!-- Form (will redirect to index.html) -->
+        <form action="index.html" method="get">
+
+          <!-- Name -->
+          <div class="mb-3 position-relative">
+            <i class="fa-solid fa-user icon-inside-input"></i>
+            <input type="text" class="form-control ps-5" placeholder="Name" required>
+          </div>
+
+          <!-- Mobile -->
+          <div class="mb-3 position-relative">
+            <i class="fa-solid fa-phone icon-inside-input"></i>
+            <input type="tel" class="form-control ps-5" placeholder="Mobile" required>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3 position-relative">
+            <i class="fa-solid fa-envelope icon-inside-input"></i>
+            <input type="email" class="form-control ps-5" placeholder="Email" required>
+          </div>
+
+
+          <!-- Message -->
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-yellow px-4">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 border-0 position-relative login-modal">
+
+        <!-- Close Button -->
+        <button type="button" class="btn-lclose position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+          aria-label="Close" style="color:grey"></button>
+
+        <!-- Logo and Heading -->
+        <div class="text-center mb-4">
+          <img src="assets/Salford Class.png" alt="Logo" style="height:180px; width:180px;">
+          <h4 class="mt-2 fw-bold fs-2" style="font-family: 'Josefin Sans', sans-serif;">LOGIN</h4>
+        </div>
+
+        <!-- Login Form -->
+        <form action="index.html" method="get">
+          <div class="mb-3 py-2">
+            <input type="text" class="form-control input-field " placeholder="Username" required>
+          </div>
+          <div class="mb-3 py-2">
+            <input type="password" class="form-control input-field" placeholder="Password" required>
+          </div>
+          <div class="text-center mb-3 py-2">
+            <button type="submit" class="btn btn-yellow fs-5 px-4 py-2">Login</button>
+          </div>
+        </form>
+
+        <!-- Links -->
+        <div class="text-start small">
+          <p class="mb-1 fw-bold fs-5">Forgot Password?</p>
+          <p class="fw-bold fs-5">New User? <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal"
+              data-bs-target="#registerModal" data-bs-dismiss="modal">
+              Create Account?
+            </a></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 border-0 position-relative login-modal">
+
+        <!-- Close Button (White) -->
+        <button type="button" class="btn-lclose position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+          aria-label="Close" style="color:gray;"></button>
+
+        <!-- Heading -->
+        <div class="text-center mb-4">
+          <h4 class="mt-2 fw-bold fs-2">REGISTER</h4>
+        </div>
+
+        <!-- Form -->
+        <form action="index.html" method="get">
+          <div class="mb-3">
+            <input type="text" class="form-control input-field" placeholder="  Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control input-field" placeholder="  Mobile" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control input-field" placeholder="  Email" required>
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control input-field" placeholder="  Password" required>
+          </div>
+
+          <!-- Register Button -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-yellow px-4 py-2">Register</button>
+          </div>
+        </form>
+
+        <!-- Switch to Login -->
+        <div class="text-center mt-4">
+          <p class="fw-bold mb-2">Do you Have an Account?</p>
+          <a href="#" class="btn btn-yellow" data-bs-toggle="modal" data-bs-target="#loginModal"
+            data-bs-dismiss="modal">Login</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- Second Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4" style="background-color: #00264d;">
+
+      <div class="modal-body text-white p-4">
+
+        <!-- Logo -->
+        <div class="text-center mb-3">
+          <img src="assets/Salford_Class-removebg-preview.png" alt="Logo" width="150" style="border-radius: 50%;">
+        </div>
+
+        <!-- Title -->
+        <h4 class="text-center fw-bold mb-4 fs-2">Get in Touch</h4>
+
+        <!-- Contact Form -->
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control rounded-pill px-4" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control rounded-pill px-4" placeholder="Mobile">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control rounded-pill px-4" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control rounded-3 px-4" placeholder="Course Preferred*" style="height: 60px;">
+          </div>
+          <div class="mb-4">
+            <textarea class="form-control rounded-3 px-4 py-2" placeholder="Your Message" rows="3"></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-warning rounded-3 px-5 fw-bold">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+<footer class="footer text-white pt-5 pb-4">
+  <div class="container text-md-start text-center">
+    <div class="row">
+
+      <!-- Logo & Name -->
+      <div class="col-md-3 mb-4 px-4">
+        <img src="assets/Salford_Class-removebg-preview.png" alt="Vetri College Logo" class="mb-3 fimg">
+        <h5 class="name fw-bold text-uppercase fs-3">VETRI COLLEGE & INSTITUTIONS</h5>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold text-uppercase">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Examinations</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Our Services</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Courses -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold text-uppercase">Courses</h5>
+        <ul class="list-unstyled">
+          <li>Python Fullstack</li>
+          <li>UI UX Designing</li>
+          <li>Data Analytics</li>
+          <li>Java Fullstack</li>
+          <li>Mern Stack</li>
+          <li>Data Science</li>
+          <li>Business Analytics</li>
+          <li>Software Testing</li>
+          <li>Digital Marketing</li>
+          <li>AWS & Mobile App</li>
+          <li>Development</li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold text-uppercase">Address</h5>
+        <p><i class="fas fa-map-marker-alt me-2"></i>21, XYZ Street, ABC Nagar, Chennai-6000xx</p>
+        <p><i class="fas fa-phone-alt me-2"></i>+91 9123456789</p>
+        <p><i class="fas fa-envelope me-2"></i>Info@vetricollegeandinstitutions.com</p>
+
+        <h5 class="fw-bold mt-4">Follow us on:</h5>
+        <div class="d-flex gap-2 align-items-center mt-2">
+          <a href="#"><img src="assets/whatsapp.png" alt="WhatsApp"></a>
+          <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="assets/youtube.png" alt="YouTube"></a>
+          <a href="#"><img src="assets/twitter.png" alt="Twitter"></a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="text-center pt-3 mt-4">
+      <p class="mb-0">© 2025 Vetri College & Institutions. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</html>
